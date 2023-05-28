@@ -4,7 +4,7 @@ import { CreateCarDTO } from './dto/create-cart.dto';
 
 @Controller('cars')
 // Para nivel de controlador
-@UsePipes(ValidationPipe)
+// @UsePipes(ValidationPipe)
 export class CarsController {
 
     constructor(
