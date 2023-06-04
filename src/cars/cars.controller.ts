@@ -1,6 +1,6 @@
 import { Controller, Get, Post, Patch, Delete, Param, Body, ParseIntPipe, ParseUUIDPipe, UsePipes, ValidationPipe } from '@nestjs/common';
 import { CarsService } from './cars.service';
-import { CreateCarDTO } from './dto/create-cart.dto';
+import { CreateCarDTO } from './dto/create-car.dto';
 
 @Controller('cars')
 // Para nivel de controlador
@@ -30,11 +30,7 @@ export class CarsController {
     // Para nivel de función
     // @UsePipes(ValidationPipe)
     createCar(@Body() createCarDto: CreateCarDTO) {
-        return {
-            ok: true,
-            method: 'Post',
-            createCarDto
-        }
+        return this.carsService.create(createCarDto);
     }
 
     @Patch(':id')
