@@ -1,0 +1,154 @@
+{
+	"info": {
+		"_postman_id": "092108c3-ad01-4d97-b85d-bd6009151eb1",
+		"name": "car-dealership",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27253328"
+	},
+	"item": [
+		{
+			"name": "get all cars",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/cars/",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"cars",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get id car",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/cars/d6f54c62-97c1-4586-b556-fbbcf934a735",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"cars",
+						"d6f54c62-97c1-4586-b556-fbbcf934a735"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create car",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "brand",
+							"value": "Volvo",
+							"type": "text"
+						},
+						{
+							"key": "model",
+							"value": "XC40",
+							"type": "text"
+						},
+						{
+							"key": "Bananas",
+							"value": "true",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "Lovable?",
+							"value": "1",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/cars/",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"cars",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "brand",
+							"value": "Nisan",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "model",
+							"value": "CT343",
+							"type": "text"
+						},
+						{
+							"key": "id",
+							"value": "15439fc0-4a5d-4288-b9f3-08144220155e",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/cars/8467da9d-9ea6-461f-ba3d-475c03cd22f7",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"cars",
+						"8467da9d-9ea6-461f-ba3d-475c03cd22f7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete car",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/cars/7d8a4a03-afed-430f-b18a-4ef5bcac636e",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"cars",
+						"7d8a4a03-afed-430f-b18a-4ef5bcac636e"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
