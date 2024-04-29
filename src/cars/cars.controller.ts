@@ -23,7 +23,7 @@ export class CarsController {
     @Post()
     // @UsePipes(ValidationPipe) // lvl fn
     createCar(@Body() createCarDto: CreateCarDto) {
-        return { message: createCarDto }
+        return this.carsService.create(createCarDto);
     }
 
     @Patch(":id")
